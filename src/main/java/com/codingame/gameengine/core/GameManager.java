@@ -35,8 +35,8 @@ abstract public class GameManager<T extends AbstractPlayer> {
     private static final int VIEW_DATA_TOTAL_HARD_QUOTA = 1024 * 1024;
     private static final int GAME_SUMMARY_TOTAL_HARD_QUOTA = 512 * 1024;
     private static final int GAME_SUMMARY_PER_TURN_HARD_QUOTA = 800;
-    private static final int GAME_DURATION_HARD_QUOTA = 30_000;
-    private static final int GAME_DURATION_SOFT_QUOTA = 25_000;
+    private static final int GAME_DURATION_HARD_QUOTA = Integer.MAX_VALUE;
+    private static final int GAME_DURATION_SOFT_QUOTA = Integer.MAX_VALUE;
     private static final int MAX_TURN_TIME = GAME_DURATION_SOFT_QUOTA;
     private static final int MIN_TURN_TIME = 50;
 
